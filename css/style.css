@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:20,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    background: #21283a;
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: #8748e0;
+    transition: 1s;
+}
+
+section.active::before
+{
+    background: #21283a;
+    box-shadow: 0 0 0 1200px #8748e0
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+header .logo
+{
+    font-size: 1.5em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header .toggle
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(https://img.icons8.com/ios-glyphs/2x/ffffff/menu.png);
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+header .toggle.active
+{
+    background: url(https://img.icons8.com/ios-glyphs/2x/ffffff/macos-close.png);
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.agua
+{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    top: 47%;
+    right: 80px;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 800px;
+    max-width: 500;
+}
+
+.content
+{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.content .contentBx
+{
+    position: relative;
+    max-width: 700px;
+}
+
+.content .contentBx h4
+{
+    font-weight: 400;
+    color: #e0c448;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.content .contentBx h2
+{
+    font-size: 4em;
+    line-height: 1em;
+    color: #fff;
+}
+
+.content .contentBx h3
+{
+    font-size: 2em;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.content .contentBx p
+{
+    font-size: 1em;
+    color: #fff;
+    margin: 10px 0 20px;
+}
