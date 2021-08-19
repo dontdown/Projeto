@@ -28,14 +28,14 @@ section::before
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: #8748e0;
+    background: #f7cf1f;
     transition: 1s;
 }
 
 section.active::before
 {
     background: #21283a;
-    box-shadow: 0 0 0 1200px #8748e0
+    box-shadow: 0 0 0 1200px #f7cf1f
 }
 
 header
@@ -80,7 +80,7 @@ header .toggle.active
     cursor: pointer;
 }
 
-.agua
+.mundo
 {
     position: absolute;
     z-index: 2;
@@ -251,6 +251,7 @@ header .toggle.active
 {
     color: #21283a;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 1.5em;
     margin: 5px 0;
     padding: 5px 10px;
@@ -263,4 +264,63 @@ header .toggle.active
     letter-spacing: 6px;
     background: #fff;
     color: #21283a;
+}
+
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 20px 40px;
+    }
+    section
+    {
+        padding: 0 40px;
+    }
+    section::before
+    {
+        opacity: 0;
+    }
+    .content
+    {
+        margin: 50px 0;
+    }
+    .mundo
+    {
+        right: 30px;
+        opacity: 0.3;
+        top: 40%
+    }
+    .banner.active .mundo
+    {
+        opacity: 0;
+    }
+    .menu
+    {
+        align-items: center;
+        padding-left: 0;
+    }
+    .menu li a
+    {
+        color: #fff;
+    }
+    .content .contentBx h2
+    {
+        font-size: 2.2em;
+    }
+    .content .contentBx h3
+    {
+        font-size: 1.5em;
+    }
+    .content .contentBx a
+    {
+        padding: 6px 15px;
+        margin-right: 5px;
+    }
+    .banner.active .sci,
+    .banner.active .content,
+    .banner.active .logo
+    .banner.active .mundo
+    {
+        transition: 0s;
+    }
 }
