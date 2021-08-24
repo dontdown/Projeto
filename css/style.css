@@ -7,6 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body
+{
+    margin: 0;
+    padding: 0; 
+    min-height: auto;
+}
+
+
 section
 {
     position: relative;
@@ -22,8 +30,8 @@ section::before
 {
     content: '';
     position: absolute;
-    top: 50%;
-    right: 100px;
+    top: 48%;
+    right: 110px;
     transform: translateY(-50%);
     width: 400px;
     height: 400px;
@@ -35,7 +43,7 @@ section::before
 section.active::before
 {
     background: #21283a;
-    box-shadow: 0 0 0 1200px #f7cf1f
+    box-shadow: 0 0 0 1700px #f7cf1f
 }
 
 header
@@ -90,7 +98,7 @@ header .toggle.active
     transform: translateY(-50%);
     width: 500px;
     height: 800px;
-    max-width: 500;
+    border-radius: 50%;
 }
 
 .content
