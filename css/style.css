@@ -12,6 +12,7 @@ body
     margin: 0;
     padding: 0; 
     min-height: auto;
+    background: #1B2029;
 }
 
 
@@ -23,7 +24,7 @@ section
     padding: 0 100px;
     display: flex;
     align-items: center;
-    background: #1B2029;
+
 }
 
 section::before
@@ -323,6 +324,10 @@ header .toggle.active
     {
         padding: 6px 15px;
         margin-right: 5px;
+    }
+    .sci img
+    {
+        margin-top: 15rem;
     }
     .banner.active .sci,
     .banner.active .content,
