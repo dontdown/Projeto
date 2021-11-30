@@ -12,7 +12,8 @@ body
     margin: 0;
     padding: 0; 
     min-height: auto;
-    background: #1B2029;
+    background: url("https://images4.alphacoders.com/966/thumb-1920-966314.jpg") #1B2029;
+    background-size: cover;
 }
 
 
@@ -34,8 +35,6 @@ section::before
     top: 48%;
     right: 110px;
     transform: translateY(-50%);
-    width: 400px;
-    height: 400px;
     border-radius: 50%;
     background: #f7cf1f;
     transition: 1s;
@@ -89,19 +88,6 @@ header .toggle.active
     cursor: pointer;
 }
 
-.mundo
-{
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    top: 47%;
-    right: 80px;
-    transform: translateY(-50%);
-    width: 500px;
-    height: 800px;
-    border-radius: 50%;
-}
-
 .content
 {
     position: relative;
@@ -138,14 +124,14 @@ header .toggle.active
 {
     font-size: 2em;
     font-weight: 300;
-    color: #fff;
+    color: #364958;
     line-height: 1.5em;
 }
 
 .content .contentBx p
 {
     font-size: 1em;
-    color: #fff;
+    color: #364958;
     margin: 10px 0 20px;
     font-weight: 300;
 }
@@ -227,18 +213,22 @@ header .toggle.active
     transform-origin: right;
 }
 
+
+
+/*
+    MENU ANTIGO
 .menu
 {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 100px;
+    align-items: flex-end;
+
+    padding-left: 200px;
     transition: 0.5s;
     z-index: 2;
     visibility: hidden;
@@ -273,7 +263,7 @@ header .toggle.active
     letter-spacing: 6px;
     background: #fff;
     color: #21283a;
-}
+} */
 
 @media (max-width: 991px)
 {
