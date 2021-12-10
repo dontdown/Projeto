@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Projeto ONG's </title>
+    <title>Projeto v2</title>
 </head>
 <body>
-    <section class="">
-        <header>
-            <nav>
-                <a class="logo" href="#">Projeto</a>
-                <ul class="nav-list">
-                  <li><a href="home.html">Início</a></li>
-                  <li><a href="#">Sobre</a></li>
-                  <li><a href="#">Contato</a></li>
-                  <li><a href="cadastro.html">Cadastro</a></li>
-                  <li><a href="login.html">Login</a></li>
-                </ul>
-              </nav>
-        </header>
+    <header>
+        <a href="#" class="logo">Projeto v2</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
 
-
-        <div class="content">
-            <div class="contentBx">
-                <h4>Hello,</h4>
-                <h2>Seja bem vindo!</h2>
-                <h3>Projeto para arrecadação de dinheiro.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde quas perspiciatis necessitatibus reiciendis veritatis incidunt sequi nesciunt obcaecati, tenetur cum rerum eius laudantium inventore, iusto quia sed blanditiis praesentium?</p>
-                <a href="#">Sobre</a>
-                <a href="#">Doar</a>
-            </div>
-        </div>
+    <section>
+        <h2 id="text">Welcome</h2>
+        <h3 id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <a href="#sec" id="btn">Explore</a>
     </section>
+
+    <div class="sec" id="sec">
+        <h2>Website Testing</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum vero placeat quam reiciendis, accusantium similique optio explicabo quod provident eveniet doloribus saepe voluptates tempore, consectetur dignissimos blanditiis, dolorem odit libero.<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum vero placeat quam reiciendis, accusantium similique optio explicabo quod provident eveniet doloribus saepe voluptates tempore, consectetur dignissimos blanditiis, dolorem odit libero.<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum vero placeat quam reiciendis, accusantium similique optio explicabo quod provident eveniet doloribus saepe voluptates tempore, consectetur dignissimos blanditiis, dolorem odit libero.
+            <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum vero placeat quam reiciendis, accusantium similique optio explicabo quod provident eveniet doloribus saepe voluptates tempore, consectetur dignissimos blanditiis, dolorem odit libero.<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum vero placeat quam reiciendis, accusantium similique optio explicabo quod provident eveniet doloribus saepe voluptates tempore, consectetur dignissimos blanditiis, dolorem odit libero.
+            <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum vero placeat quam reiciendis, accusantium similique optio explicabo quod provident eveniet doloribus saepe voluptates tempore, consectetur dignissimos blanditiis, dolorem odit libero.
+            <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum vero placeat quam reiciendis, accusantium similique optio explicabo quod provident eveniet doloribus saepe voluptates tempore, consectetur dignissimos blanditiis, dolorem odit libero.</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let text2 = document.getElementById('text2');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            text.style.marginRight = value * 4 + 'px';
+            text2.style.marginRight = value * 2.5 + 'px';
+            btn.style.marginRight = value * 1.5 + 'px';
+        })
+    </script>
 
 </body>
 </html>
