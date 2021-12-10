@@ -140,3 +140,18 @@ section::before
     font-size: 1.2em;
     color: #fff;
 }
+
+.sec a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.sec a:hover
+{
+    background: #000;
+    color: #fff;
+}
