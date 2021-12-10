@@ -32,7 +32,7 @@ header
   @media (max-width: 999px) {
 
     .nav-list {
-      position: absolute;
+      position: relative;
       top: 8vh;
       right: 0;
       width: 50vw;
@@ -188,13 +188,22 @@ main form input[type="submit"]:hover{
     background: #5f56db;
 }
 
-section.images{
+/* section.images{
     display: flex;
     align-items: flex-end;
-    padding: 4rem;
+    padding: 50px;
 }
 
 section.images img{
-    width: 90%;
+    width: 70%;
+} */
+
+section.images-cad{
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
 }
 
+section.images-cad img{
+    width: 70%;
+}

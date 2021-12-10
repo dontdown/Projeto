@@ -40,16 +40,6 @@ header
     align-items: center;
     padding: 30px 100px;
 }
-
-.nav-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-  }
   
   @media (max-width: 999px) {
 
